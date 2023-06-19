@@ -2,7 +2,7 @@ const amqp = require('amqplib');
 
 async function produceMessage() {
   try {
-    const connection = await amqp.connect('amqp://guest:guest@amq.copperbet.com:5672/');
+    const connection = await amqp.connect('amqp://guest:guest@rmq.copperbet.com:5672/');
     const channel = await connection.createChannel();
     
     const exchangeName = 'test';

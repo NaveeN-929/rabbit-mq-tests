@@ -3,7 +3,7 @@ const amqp = require('amqplib');
 // Connect to RabbitMQ server
 // const connectionPromise = amqp.connect('amqp://navin:navin@amq.copperbet.com:5672/ad-vh');
 
-const connectionPromise = amqp.connect('amqp://guest:guest@amq.copperbet.com:5672/');
+const connectionPromise = amqp.connect('amqp://guest:guest@rmq.copperbet.com:5672/');
 
 // Function to publish a message
 async function publishMessage(message, routingKey) {
